@@ -1,6 +1,6 @@
 import requests
 import os
-from flask import Flask, request, send_file
+from flask import Flask, request, render_template
 from ibm_watson import SpeechToTextV1
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 from pytube import YouTube
@@ -18,7 +18,13 @@ from deep_translator import (GoogleTranslator,
                              QcriTranslator,
                              single_detection,
                              batch_detection)
-app = Flask(__name__)
+app = Flask(__name__, static_folder='build/static', template_folder="build")
+
+
+@app.route('/')
+def home():
+    return render_template('index.html')
+
 @app.route('/api/download', methods=["GET"])
 def download():
     """Downloads a YouTube file as an MP3.
