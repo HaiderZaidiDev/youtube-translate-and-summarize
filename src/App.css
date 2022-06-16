@@ -106,7 +106,7 @@ a {
 }
 
 .youtube-input {
-  width: 75vw;
+  width: 25vw;
   height: 50px;
   background: #F9F9FD;
   border-radius: 5px;
@@ -192,4 +192,10 @@ a {
   margin-top: 7.5vh;
   display: flex;
   justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+   .youtube-input {
+    width: 75vw;
+  }
 }
