@@ -42,7 +42,6 @@ const Midbar = () => {
             console.log('Summarizing...')
             axios.get(`/api/summary?text=${transcription}`)
             .then((res) => {
-                console.log('Summary shit:')
                 var summary = res.data
                 setSummary(summary)
                 console.log(summary)
@@ -57,7 +56,7 @@ const Midbar = () => {
 
         if (transcription) {
             console.log('Translating...')
-            axios.get(`/api/translate?text=${transcription}lang=${language}`)
+            axios.get(`/api/translate?text=${transcription}&lang=${language}`)
             .then((res) => {
                 var translation= res.data
                 setTranslation(translation)
