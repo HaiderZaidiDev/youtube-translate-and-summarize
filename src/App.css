@@ -198,4 +198,8 @@ a {
    .youtube-input {
     width: 75vw;
   }
+
+  .result-item {
+    width: 95vw;
+  }
 }
