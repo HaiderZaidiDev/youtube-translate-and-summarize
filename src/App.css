@@ -202,4 +202,8 @@ a {
   .result-item {
     width: 95vw;
   }
+
+  .header-icon {
+    display: none;
+  }
 }
