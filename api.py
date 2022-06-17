@@ -145,13 +145,15 @@ def translate() -> str:
     API URL Format: link.com/api/translate?text=&lang=
     """
     lang= request.args.get('lang')
-    summarized_text = request.args.get('text')
-     
-    s = summarized_text
-    o = []
-    while s:
-      o.append(s[:4999])
-      s = s[4999:]
+    text = request.args.get('text')
+    
+    # Splitting the text into batches: required if text is > 5000 chars.
+    temp_text = text
+    text_batches = []
+    while temp_text:
+      text_batches.append(s[:4999])
+      temp_text = temp_text[4999:]
  
-    translated_text = GoogleTranslator(source='auto', target=lang).translate_batch(o)
-    return translated_text
+    translated_text = GoogleTranslator(source='auto', target=lang).translate_batch(text_batches)
+    translated_combined = " ".join(translated_text)
+    return translated_combined
