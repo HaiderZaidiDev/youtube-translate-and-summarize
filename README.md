@@ -15,8 +15,7 @@ We found that many YouTube videos didn't have accurate transcriptions and transl
 ## How it Works
 It uses modules to download youtube videos, change them to an audio format, and send it to Google's speech-to-text. It then grammar checks the transcription, translates it, and then summarizes it. 
 
-Want to see it in action? Click the thumbnail for a demo.
-[![demo-thubmnail][](https://gyazo.com/21a1cd38a89278b54acf857061803e2d.gif)]
+![Demo Gif](https://i.imgur.com/wZUmvpP.gif)
 
 <!-- GETTING STARTED -->
 ## Getting Started
