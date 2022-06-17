@@ -1,6 +1,6 @@
 <br />
 <p align="center">
-  <h3 align="center">Virtual Steering Wheel</h3>
+  <h3 align="center">Transcribe, Translate, Summarize</h3>
   <p align="center">
     A transcription, translation, and summarization API meant to increase accesibility of digital media on YouTube to deaf and hard of hearing people.
   </p>
