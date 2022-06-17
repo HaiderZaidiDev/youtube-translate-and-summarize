@@ -146,5 +146,12 @@ def translate() -> str:
     """
     lang= request.args.get('lang')
     summarized_text = request.args.get('text')
-    translated_text = GoogleTranslator(source='auto', target=lang).translate(summarized_text)
+     
+    s = summarized_text
+    o = []
+    while s:
+      o.append(s[:4999])
+      s = s[4999:]
+ 
+    translated_text = GoogleTranslator(source='auto', target=lang).translate_batch(o)
     return translated_text
