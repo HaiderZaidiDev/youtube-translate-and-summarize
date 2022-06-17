@@ -13,7 +13,7 @@
 We found that many YouTube videos didn't have accurate transcriptions and translations, which serves as a very big barrier for people who have hearing disabilities.
 
 ## How it Works
-It uses modules to download youtube videos, change them to an audio format, and send it to Google's speech-to-text. It then grammar checks the transcription, translates it, and then summarizes it. 
+It uses modules to download youtube videos, change them to an audio format, and send it to Google's speech-to-text. It then grammar checks the transcription, translates it, and then summarize it. 
 
 ![Demo Gif](https://i.imgur.com/BYgN2KO.gif)
 
