@@ -15,7 +15,7 @@ We found that many YouTube videos didn't have accurate transcriptions and transl
 ## How it Works
 It uses modules to download youtube videos, change them to an audio format, and send it to Google's speech-to-text. It then grammar checks the transcription, translates it, and then summarizes it. 
 
-![Demo Gif](https://i.imgur.com/wZUmvpP.gif)
+![Demo Gif](https://i.imgur.com/BYgN2KO.gif)
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -25,7 +25,7 @@ Looking to demo the app yourself? Check this part out.
 ### Installation
 1. Clone the repo
    ```sh
-   git clone [https://github.com/HaiderZaidiDev/virtual-ml-steering-wheel](https://github.com/HaiderZaidiDev/youtube-translate-and-summarize)
+   git clone https://github.com/HaiderZaidiDev/youtube-translate-and-summarize
    ```
 2. Install PIP packages
    ```sh
