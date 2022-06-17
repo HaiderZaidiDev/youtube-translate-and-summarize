@@ -54,7 +54,7 @@ const Midbar = () => {
 
         // Translating the transcription.
 
-        if (transcription) {
+        if (transcription && summary) {
             console.log('Translating...')
             axios.get(`/api/translate?text=${transcription}&lang=${language}`)
             .then((res) => {
